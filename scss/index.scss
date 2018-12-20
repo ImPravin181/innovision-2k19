@@ -9,3 +9,112 @@ body {
     font-size: 16px;
     font-family: 'Roboto',sans-serif;
 } 
+
+
+// CONTACT FORM
+
+#contact {
+    .row {
+        margin: 0;
+
+        div {
+            padding: 0;
+        }
+
+        .contact-form {
+            background-color: #21293f;
+            color: #fff;
+            min-height: 90vh;
+        
+            h2 {
+                text-transform: uppercase;
+                color: #b3b5bc;
+            }
+        
+            p{
+                color: #6a6d74;
+            }
+    
+            // FORM
+    
+            #form {
+                width: 60%;
+                margin: auto;
+        
+                .btn {
+                    width: 70%;
+                    border-radius: 20px;
+                    background-color: $secondary-color;
+                    color: $nav-bg;
+                    transition: 0.5s all;
+                    box-sizing: border-box;
+                    border-top: 2px solid transparent;
+                }
+        
+                .btn:hover {
+                    background-color: #21293f;
+                    border: 2px solid $secondary-color;
+                    color: #ccc;
+                }
+        
+                .input-group {
+                    .input-group-prepend {
+                        .input-group-text {
+                            background: #2c3247 !important;
+                            border-top-left-radius: 20px;
+                            border-bottom-left-radius: 20px;
+                            border: none;
+                            color: #ccc;
+                        }
+                    }
+        
+                    input {
+                        background: #2c3247;
+                        border-top-right-radius: 20px;
+                        border-bottom-right-radius: 20px;
+                        border: none;
+                        color: #ccc;
+                        padding: 8px;
+                    }
+        
+                    input, textarea:focus {
+                        box-shadow: none;
+                    }
+        
+                    textarea {
+                        border: none;
+                        background: none;
+                        border-bottom: 3px solid #2c3247;
+                    }
+                }
+            }
+        }
+
+        // MAP
+        
+        .map {
+            min-height: 90vh;
+            .mapouter {
+                text-align: right;
+                height: 100%;
+                width: 100%;
+            }
+    
+            .gmap_canvas {
+                overflow: hidden;
+                background: none !important;
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .contact-form {
+        min-height: 100vh;
+    }
+    #form {
+        width: 90%;
+    }
+}

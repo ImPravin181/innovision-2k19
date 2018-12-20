@@ -5,4 +5,88 @@ body {
   font-family: 'Roboto',sans-serif;
 }
 
+#contact .row {
+  margin: 0;
+}
+#contact .row div {
+  padding: 0;
+}
+#contact .row .contact-form {
+  background-color: #21293f;
+  color: #fff;
+  min-height: 90vh;
+}
+#contact .row .contact-form h2 {
+  text-transform: uppercase;
+  color: #b3b5bc;
+}
+#contact .row .contact-form p {
+  color: #6a6d74;
+}
+#contact .row .contact-form #form {
+  width: 60%;
+  margin: auto;
+}
+#contact .row .contact-form #form .btn {
+  width: 70%;
+  border-radius: 20px;
+  background-color: #fad03b;
+  color: #111;
+  transition: 0.5s all;
+  box-sizing: border-box;
+  border-top: 2px solid transparent;
+}
+#contact .row .contact-form #form .btn:hover {
+  background-color: #21293f;
+  border: 2px solid #fad03b;
+  color: #ccc;
+}
+#contact .row .contact-form #form .input-group .input-group-prepend .input-group-text {
+  background: #2c3247 !important;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border: none;
+  color: #ccc;
+}
+#contact .row .contact-form #form .input-group input {
+  background: #2c3247;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: none;
+  color: #ccc;
+  padding: 8px;
+}
+#contact .row .contact-form #form .input-group input, #contact .row .contact-form #form .input-group textarea:focus {
+  box-shadow: none;
+}
+#contact .row .contact-form #form .input-group textarea {
+  border: none;
+  background: none;
+  border-bottom: 3px solid #2c3247;
+}
+#contact .row .map {
+  min-height: 90vh;
+}
+#contact .row .map .mapouter {
+  text-align: right;
+  height: 100%;
+  width: 100%;
+}
+#contact .row .map .gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .contact-form {
+    min-height: 100vh;
+  }
+
+  #form {
+    width: 90%;
+  }
+}
+
 /*# sourceMappingURL=index.css.map */
